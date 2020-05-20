@@ -15,5 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   pythonWithPipenv = pkgs.callPackage ./pkgs/pythonWithPipenv { };
+  multiEclipse = pkgs.callPackage ./pkgs/multiEclipse { };
 }
 
