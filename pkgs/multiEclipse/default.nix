@@ -32,7 +32,7 @@ let
 
       ${executableSelector}
 
-      ${coreutils}/bin/nohup $executable >${logFile} &
+      ${coreutils}/bin/nohup $executable -configuration $HOME/.eclipse/eclipse-$variant/configuration >${logFile} &
       
       sleep 0.1
     '';
