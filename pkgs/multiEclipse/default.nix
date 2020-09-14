@@ -54,6 +54,8 @@ in symlinkJoin {
     ''
       mkdir -p $out/share/applications
       cp ${desktopItem}/share/applications/* $out/share/applications
+      mkdir -p $out/share/pixmaps
+      ln -s ${builtins.elemAt myEclipsePackages 0}/share/pixmaps/eclipse.xpm $out/share/pixmaps/eclipse.xpm
     '';
 
   meta = with stdenv.lib; {
